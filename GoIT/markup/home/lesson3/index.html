@@ -3,10 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bicycle shop</title>
-	<link rel="stylesheet" href="css/style.css"></head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+
+	<!-- INIT Fancybox -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+
+	// Title
+	function showTitle(e) {
+		var title = document.getElementById('title_description');
+		console.log(title);
+		title.innerHTML  = (e.target.text);
+	}
+	</script>
+
+</head>
+	
 <body>
 	<div class="wrapper">
-		<div class="logo"></div>
+		<h1><a href=""><div class="logo"></div></a></h1>
+		
 		<ul class="topMenu">
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Товары</a></li>
@@ -16,19 +37,30 @@
 		<div class="content">
 			<div class="sideBar">
 				<ul class="sideBarMenu">
-					<li><a href="#">Обзор</a></li>
-					<li><a href="#">Позор</a></li>
-					<li><a href="#">Обвес</a></li>
-					<li><a href="#">Подвес</a></li>
-					<li><a href="#">Завес</a></li>
-					<li><a href="#">Навес</a></li>
+					<li><a onclick="showTitle(event);">Обзор</a></li>
+					<li><a onclick="showTitle(event);">Позор</a></li>
+					<li><a onclick="showTitle(event);">Обвес</a></li>
+					<li><a onclick="showTitle(event);">Подвес</a></li>
+					<li><a onclick="showTitle(event);">Завес</a></li>
+					<li><a onclick="showTitle(event);">Навес</a></li>
 				</ul>
 			</div>
 
 			<div class="product">
-				<div class= "poster"></div>
-			
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusamus itaque possimus atque asperiores quam harum dicta totam esse voluptas natus ex minima, provident debitis similique, aut dolorum dignissimos at!</p>
+				<div class= "poster">
+					<a class="fancybox" rel="group" href="img/gallery_1.jpg"><img src="img/bike.png" alt="bicke" title="Ckick here"/></a>
+					<div class="poster_hidden">
+						<a class="fancybox" rel="group" href="img/gallery_2.jpg"><img src="" alt=""/></a>
+
+						<a class="fancybox" rel="group" href="img/gallery_3.jpg"><img src="" alt=""/></a>
+					</div>
+				</div>
+				<div class="description">
+					<h1 id="title_description">Обзор</h1>
+					<p>Можно нажать на картинку.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusamus itaque possimus atque asperiores quam harum dicta totam esse voluptas natus ex minima, provident debitis similique, aut dolorum dignissimos at!</p>
+					
+				</div>
 			</div>
 		</div>
 		<ul class="bottomMenu">
@@ -36,9 +68,8 @@
 			<li><a href="#">Товары</a></li>
 			<li><a href="#">О Нас</a></li>
 			<li><a href="#">Контакты</a></li>
-			<li><p class="copy">©2015 Manatt, Phelps & Philips, LLP. All rights reserved.</p></li>
+			<li class="copy">©2015 Manatt, Phelps & Philips. All rights reserved.</li>
 		</ul>
 	</div>
-
 </body>
 </html>
