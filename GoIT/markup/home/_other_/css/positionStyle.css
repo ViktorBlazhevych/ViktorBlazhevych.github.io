@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.parent {
+	margin: 0 auto;
+	width: 800px;
+	/*height: 200px;*/
+	background-color: #ccc;
+	position: relative;
+
+}
+
+.box1 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background-color: green;
+}
+
+.box2 {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+	background-color: yellow;
+}
+
+.boxFixed {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	background-color: red;
+}
+
+.menu {
+	margin: 100px;
+	list-style: none;
+	/*overflow: hidden;*/
+	background-color: #666;
+}
+.menu li {
+	float: left;
+	margin: 0px 20px;
+	padding: 5px;
+}
+
+.menu a {
+	border: 1px solid #000;
+}
+
+/* Так делать плохо */
+.active {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}

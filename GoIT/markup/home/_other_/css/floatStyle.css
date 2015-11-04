@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ЗАЧИТСКА ГРАНИЦ*/
+
+/* для внутрених елементов типа как li (внутри плавающие)  -> применяем к UL
+	overflow: hidden;
+	position: relative;
+
+для наружных как например footer -используем 
+	clear: both;
+
+НО - НАДО ПРИМЕНТЯТЬ КО ВСЕМ КЛАСС clearFix т.к. overflow: hidden; обрезает вче что вылазит з арамки блока - например выпадающее меню.
+	*/
+
+
+/* MENU */
+
+.menu {
+	list-style: none;
+	background-color: #999;
+
+	/*overflow: hidden;
+	position: relative;*/
+}
+
+.meny li {
+	
+	
+}
+.menu a {float: left;
+	border: 1px solid #000;
+	margin: 10px;
+	padding: 10px 10px;
+	color: #ccc;
+}
+/* END MENU */
+
+.wrapper {
+	width: 100%
+}
+
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;
+}
+
+.header{
+	background-color: gray;
+}
+
+.sidebar{
+	float: left;
+	width: 50%;
+	background-color: red;	
+}
+
+.content{
+	float: right;
+	width: 50%;
+	background-color: green;
+}
+
+.footer {
+	background-color: yellow;
+}
+
+
+/* 3 colums*/
+
+.sidebar2 {
+	float: left;
+	width: 30%;
+	background-color: red;	
+}
+
+.content2 {
+	float: left;
+	width: 50%;
+	background-color: green;
+}
+
+.news2 {
+	float: right;
+	width: 20%;
+	background-color: black;
+	color: white;
+}
+
+/* 3 colums MINUS one left*/
+
+.sidebar3 {
+	float: left;
+	width: 25%;
+	background-color: red;	
+}
+
+.content3 {
+	margin: 0 auto;
+	width: 50%;
+	background-color: green;
+}
+
+.news3 {
+	float: right;
+	width: 25%;
+	background-color: black;
+	color: white;
+}
