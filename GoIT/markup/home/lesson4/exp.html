@@ -1,0 +1,65 @@
+<html>
+<head>
+
+	<title>Футер прижат к низу</title>
+	<style type="text/css">
+* {margin: 0; padding: 0;} /* обнуляем отступы */
+
+
+body {
+background: #fff;
+}
+
+
+html,body {
+height: 100%; /* задаем высоту тела документа */
+}
+
+
+
+.main { /* основной блок, который должен растянуться до подвала */
+background: #999; /* цвет фона основного блока (для наглядности) */
+width: 150px;
+height: 100%; /* задаем минимальную высоту основного блока */
+}
+
+.main1 { /* хак для ie6 */
+	/*float:left;*/
+max-height: 100%;
+background-color: #555; /* для ие6, т.к. не понимает min-height */
+-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.hFooter {
+	clear: both;
+background: #ff0000; /* это распорка в основном блоке - резервируем место для подвала */
+height: 40px; 
+/*margin: -40px;*/
+/* высота нашего подвала */
+}
+.footer { /* подвал */
+background: #0000CC; /* цвет фона подвала (для наглядности) */
+color: #fff;
+height: 40px; /* высота подвала */
+margin-top: 0px; /* делаем отрицательный отступ по высоте равный высоте подвла, чтобы четко вписаться в размер экрана */
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="main1">
+			0000<br>
+			111<br>
+			222<br>
+			333<br>
+			444<br>
+		</div>
+
+		<div class="hFooter"></div>
+	</div>
+	<!-- <div class="footer">Это подвал</div> -->
+</body>
+</html>

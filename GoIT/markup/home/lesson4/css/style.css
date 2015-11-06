@@ -1,0 +1,350 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #0f8aac;
+	color: #128aa7;
+	font: 12px/24px Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;
+}
+
+/*	BACKGROUND  */
+.main_bg {
+	width: 100%;
+	;
+}
+
+.bg1 {
+	height: 29px;
+	background-color: #128aa7;
+}
+.bg1_1 {
+	height: 1px;
+	background-color: #5ef0ff;
+}
+
+.bg2 {
+	height: 145px;
+	background-color: #128aa7;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#12cde2+0,ffffff+100 */
+	background: #12cde2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #12cde2 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#12cde2), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #12cde2 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #12cde2 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #12cde2 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #12cde2 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12cde2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.bg3 {
+	height: 145px;
+	background-color: #128aa7;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c6d3+0,0f8aac+100 */
+	background: #41c6d3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #41c6d3 0%, #0f8aac 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41c6d3), color-stop(100%,#0f8aac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #41c6d3 0%,#0f8aac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #41c6d3 0%,#0f8aac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #41c6d3 0%,#0f8aac 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #41c6d3 0%,#0f8aac 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c6d3', endColorstr='#0f8aac',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* WRAPER */
+.wrapper {
+	position: relative;
+	margin-top :-320px;
+	left: 50%;
+	width: 1000px;
+	margin-left: -500px;
+	/*min-height: 100%;*/
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+	border-radius: 0px 0px 10px 10px ;
+}
+
+.header {
+	width: 100%;
+	height: 175px;
+	position: relative;
+}
+
+.imageSlider {
+	width: 100%;
+	height: 235px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+.logo {
+	margin: 11px 20px 0px;
+	position: relative;
+	display: inline-block;
+}
+
+.logo a {
+	display: block;
+	line-height: 0px;
+	font-size: 0px
+}
+
+.logo span {
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: #128aa7;
+	font-size: 11px;
+}
+
+.contact {
+	float: right;
+	margin: 10px 30px;
+}
+.contact h1 {
+	font-size: 12px;
+	line-height: 32px;
+}
+.contact p {
+	line-height: 14px;
+}
+.contact a {
+	line-height: 14px;
+	color: #128aa7;
+}
+
+/* HEADER NAVIGATION */
+.headerMenu {
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+}
+
+.headerMenu ul{
+	list-style: none
+
+}
+
+.headerMenu li {
+	position: relative;
+	margin: 0px 5px;
+	float: left;
+	width: 60px;
+	text-align: center;
+}
+
+.headerMenu a {
+	text-align: center;
+	font-size: 9px;
+	color: #128aa7;
+}
+
+
+.sprite {
+	position: absolute;
+    background-image: url(../img/flags.png);
+    background-repeat: no-repeat;
+   	left:10px;
+   	bottom:20px;
+   	border: 1px solid #128aa7;
+   	border-radius: 40px;
+ }
+
+.sprite-butan {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -5px;
+}
+
+.sprite-india {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -5px;
+}
+
+.sprite-maldives {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -55px;
+}
+
+.sprite-nepal {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -55px;
+}
+
+.sprite-shrilanka {
+    width: 40px;
+    height: 40px;
+    background-position: -105px -5px;
+}
+
+.sprite-tibet {
+    width: 40px;
+    height: 40px;
+    background-position: -105px -55px;
+}
+
+/* MAIN MENU */
+
+.mainMenuHolder {
+	height: 30px;
+	background-color: #333333;
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mainMenu {
+	list-style: none;
+
+}
+
+.mainMenu li {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 140px;
+	text-align: center;
+	z-index: 2;
+}
+
+.mainMenu a {
+	display: inline-block;
+	line-height: 30px;
+	color: #fff;
+}
+
+.arrow {
+	float: right;
+	width: 10px;
+	height: 10px;
+	margin: 10px 0px 0px 10px;
+	background-image: url(../img/arrow.png);
+}
+
+/* MENU LEVEl 2*/
+/* делается второй уровень так */
+
+.mainMenu ul{
+  position: absolute;
+  /*left: 23px;*/
+  visibility: hidden;
+  top: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.mainMenu li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.mainMenu ul li{
+  background: #333333;
+}
+.mainMenu ul a{
+  padding: 0 10px;
+}
+
+/* END MENU LEVEl 2*/
+
+.content {
+	position: relative;
+	width: 100%;
+	/*height: 100%;*/
+	/*background-color: gray;*/
+}
+
+.fon1 {  /* фон для левой колонки (синий) */
+	width: 1000px;
+	background: #3d2af0;
+	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+	position: relative; /* чтобы иметь возможность сместить фон */
+	right: 25%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
+}
+
+.fon2 {/* фон для центральной колонки (красный) */
+	width: 1000px;
+	background: #e34456;
+	float: left;
+	position: relative;
+	right: 50%; /* обнажаем желтый фон для правой колонки. 40% - ширина правой колонки */
+}
+
+.fon3 {/* фон для правой колонки (желтый) */
+	width: 1000px;
+	background: #e3e244;
+	float: left;
+}
+
+
+
+.sidebar {
+	float: left;
+	width: 25%;
+	/*background-color: red;*/
+}
+
+.sidebar p {
+	margin: 10px;
+}
+
+.news {
+	float: left;
+	width: 25%;
+	/*background-color: yellow;*/
+}
+
+.news p {
+	margin: 10px;
+}
+
+.mainContent {
+	float: left;
+	width: 50%;
+	/*background-color: green;*/
+}
+
+.mainContent h1 {
+	margin: 10px;
+	color: #666;
+}
+.mainContent p {
+	margin: 10px;
+	color: #666;
+}
+
+.contentImg {
+	float:left;
+	margin: 10px;
+	/*padding: 10px;*/
+	border-radius: 10px;
+}
+
+/*  FOOTER */
+.footer {
+	height: 50px;
+	padding: 10px
+}
+.footer p{
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+}
