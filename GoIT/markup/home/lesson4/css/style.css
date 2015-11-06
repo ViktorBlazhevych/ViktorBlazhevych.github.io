@@ -88,8 +88,7 @@ body {
 }
 
 .logo {
-	width:283px;
-	height: 164px;
+	float:left;
 	margin: 11px 20px 0px;
 	position: relative;
 	display: inline-block;
