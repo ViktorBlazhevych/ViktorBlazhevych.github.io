@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Polina</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		<ul class="subMenu">
+			<li><a href="#"><img src="img/flag.png" height="27" width="25" alt="">Buy Me An My Bike</a></li>
+			<li><a href="#">Ah <u>No</u>, I'm <u>Not</u> Buy You</a></li>
+		</ul>
+		<div class="separator"></div>
+		<ul class="menu">
+			<li><a href="#">Men YouBike</a></li>
+			<li><a href="#">Vendor</a></li>
+			<li><a href="#">Forum</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Polina</a></li>
+		</ul>
+	</div>
+
+	<!-- Vido BG -->
+	<video class="videoStage" id="videoBG" autoplay="" loop="" poster="img/polina.jpg" id="bgvid">
+		<source src="img/polina.webm" type="video/webm">
+		<source src="img/polina.mp4" type="video/mp4">
+	</video> 
+	<!--  -->
+
+	<div class="ground" id="imageBG" ></div>
+	<div class="content cleafix" id="contentHolder" >
+		<div class="title"><p>Polina Svazhrovsky</p></div>
+		<div class="formHolder">
+			<form>
+				<div class="buttonFB"><a href="#"></a></div>
+				<div class="separatorForms">OR</div>
+				<input type="text" placeholder="First Name"/>
+				<input type="text" placeholder="Last Name"/>
+				<input type="text" placeholder="Email"/>
+				<input type="password" placeholder="Choose Password"/>
+				<input type="password" placeholder="Password Confirm"/>
+				<label class="checkBoxBlock"><input type="checkbox"/>Send me Youbike updates and tips</label>
+				<button onclick="switchBG(event);">Create my Account</button>
+				<p class="footerForm">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
+
+			</form>
+
+		</div>
+	</div>
+
+<script>
+	switchBG(event);
+</script>
+</body>
+</html>
