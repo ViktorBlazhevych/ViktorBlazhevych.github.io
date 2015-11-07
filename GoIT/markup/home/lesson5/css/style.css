@@ -118,7 +118,7 @@ body {
 	height: 600px;
 	overflow: hidden;
 
-	/*transition: 1s margin;*/
+	transition: 1s margin;
 }
 
 .title{
@@ -245,7 +245,7 @@ input[type="password"]:focus {
     top: -1px;
 } 
 
-button {
+input[type="button"] {
 	display: inline-block;
 	width: 150px;
     height: 30px;
@@ -266,7 +266,7 @@ button {
 
 .footerForm {
 	position: relative;
-	bottom: -60px;
+	bottom: -30px;
 	margin: 0 auto;
 	width: 250px;
 	font-size: 10px;
@@ -288,6 +288,6 @@ button {
 	transform: translateX(-50%) translateY(-50%);
 	background: url(../img/polina.jpg) no-repeat; background-size: cover;  
 	
-	/*-webkit-transition: 1s opacity; */
-	/*transition: 1s opacity;*/
+	-webkit-transition: 1s opacity; 
+	transition: 1s opacity;
 }
