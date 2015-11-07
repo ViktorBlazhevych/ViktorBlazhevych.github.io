@@ -288,6 +288,6 @@ button {
 	transform: translateX(-50%) translateY(-50%);
 	background: url(../img/polina.jpg) no-repeat; background-size: cover;  
 	
-	-webkit-transition: 1s opacity; 
-	transition: 1s opacity;
+	/*-webkit-transition: 1s opacity; */
+	/*transition: 1s opacity;*/
 }
