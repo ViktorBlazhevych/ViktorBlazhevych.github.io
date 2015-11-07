@@ -113,9 +113,9 @@ body {
 	top: 50%;
 	left: 50%;
 	/*margin: -300px -200px;*/
-	margin: -300px 15%;
+	margin: -350px 15%;
 	width: 400px;
-	height: 600px;
+	height: 700px;
 	overflow: hidden;
 
 	transition: 1s margin;
@@ -207,6 +207,25 @@ input[type="text"]:focus {
 	border-bottom: 1px solid #ccc;
 }
 
+input[type="email"] {
+	display: inline-block;
+	margin: 0;
+	width: 235px;
+	padding:0px 20px;
+	background-color: #101010;
+	font : 12px/30px "Open Sans", Tahoma, Arial, sans-serif;
+	color: #cccccc;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+input[type="email"]:focus {
+	background-color: #1b5288;
+	color: #fffbfb;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
 input[type="password"] {
 	display: inline-block;
 	margin: 0;
@@ -245,14 +264,15 @@ input[type="password"]:focus {
     top: -1px;
 } 
 
-input[type="button"] {
-	display: inline-block;
+input[type="submit"] {
+	display: block;
 	width: 150px;
     height: 30px;
     line-height: 30px;
 	border:none;
 	border-radius: 5px;
 	color: #fff;
+	margin: 0px auto;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50afdc+0,2e7ac4+100 */
 	background: #50afdc; /* Old browsers */
 	background: -moz-linear-gradient(top,  #50afdc 0%, #2e7ac4 100%); /* FF3.6+ */
@@ -263,7 +283,25 @@ input[type="button"] {
 	background: linear-gradient(to bottom,  #50afdc 0%,#2e7ac4 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
-
+input[type="reset"] {
+	display: block;
+	width: 150px;
+    height: 30px;
+    line-height: 30px;
+	border:none;
+	border-radius: 5px;
+	color: #fff;
+	margin: 0px auto;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50afdc+0,2e7ac4+100 */
+	background: #50afdc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #990000 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#2e7ac4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #990000 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #990000 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #990000 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #990000 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+}
 .footerForm {
 	position: relative;
 	bottom: -30px;

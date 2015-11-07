@@ -34,16 +34,41 @@
 	<div class="content cleafix" id="contentHolder" >
 		<div class="title"><p>Polina Svazhrovsky</p></div>
 		<div class="formHolder">
-			<form>
-				<div class="buttonFB"><a href="#"></a></div>
+			<form action="/services.php" method="GET">
+				<div class="buttonFB"><a href="#" onclick="switchBG(event);"></a></div>
 				<div class="separatorForms">OR</div>
-				<input type="text" placeholder="First Name"/>
-				<input type="text" placeholder="Last Name"/>
-				<input type="text" placeholder="Email"/>
-				<input type="password" placeholder="Choose Password"/>
-				<input type="password" placeholder="Password Confirm"/>
-				<label class="checkBoxBlock"><input type="checkbox"/>Send me Youbike updates and tips</label>
-				<input type="button" onclick="switchBG(event);" value="Create my Account"/>
+				<input type="text" placeholder="First Name" name="first_name" required/>
+				<input type="text" placeholder="Last Name" name="last_name" required/>
+				<input type="email" placeholder="Email" name="email" required/>
+				<input type="password" placeholder="Choose Password" name="password" required/>
+				<input type="password" placeholder="Password Confirm" required/>
+				<label class="checkBoxBlock"><input type="checkbox" name="sendUpdate"/>Send me Youbike updates and tips</label>
+				<!-- <input type="button" value="Create my Account"/> -->
+
+				<input type="submit" value="Create my Account"/>
+				<input type="reset" value="Clear Form"/>
+
+
+
+<!-- <select name="ddValue" id="">
+	<optgroup label="OSS">
+		<option value="1">people1</option>
+		<option value="2">people2</option>
+		<option value="3">people3</option>
+		<option value="4">people4</option>
+	</optgroup>
+	<optgroup label="TalkMarket">
+		<option value="5">people1</option>
+		<option value="6">people2</option>
+		<option value="7">people3</option>
+		<option value="8">people4</option>
+	</optgroup>
+</select> -->
+
+
+
+
+
 				<p class="footerForm">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
 
 			</form>
