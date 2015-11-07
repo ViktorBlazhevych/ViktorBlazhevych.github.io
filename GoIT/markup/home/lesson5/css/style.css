@@ -118,7 +118,7 @@ body {
 	height: 600px;
 	overflow: hidden;
 
-	transition: 1s margin;
+	/*transition: 1s margin;*/
 }
 
 .title{
