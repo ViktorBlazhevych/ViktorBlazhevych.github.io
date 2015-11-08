@@ -294,12 +294,12 @@ input[type="reset"] {
 	margin: 0px auto;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50afdc+0,2e7ac4+100 */
 	background: #50afdc; /* Old browsers */
-	background: -moz-linear-gradient(top,  #990000 0%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#2e7ac4)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #990000 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #990000 0%,#000000 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #990000 0%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #990000 0%,#000000 100%); /* W3C */
+	background: -moz-linear-gradient(top,  #990000 0%, #560000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#560000), color-stop(100%,#2e7ac4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #990000 0%,#560000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #990000 0%,#560000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #990000 0%,#560000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #990000 0%,#560000 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
 .footerForm {
