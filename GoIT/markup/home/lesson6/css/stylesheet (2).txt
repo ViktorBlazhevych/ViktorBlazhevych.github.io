@@ -1,0 +1,101 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-autorize {
+    width: 14px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+.icon-checkout {
+    width: 21px;
+    height: 17px;
+    background-position: -29px -5px;
+}
+
+.icon-home {
+    width: 12px;
+    height: 11px;
+    background-position: -60px -5px;
+}
+
+.icon-icon_1 {
+    width: 12px;
+    height: 14px;
+    background-position: -82px -5px;
+}
+
+.icon-icon_2 {
+    width: 12px;
+    height: 12px;
+    background-position: -104px -5px;
+}
+
+.icon-logo_1 {
+    width: 72px;
+    height: 13px;
+    background-position: -60px -29px;
+}
+
+.icon-logo_2 {
+    width: 77px;
+    height: 21px;
+    background-position: -5px -52px;
+}
+
+.icon-logo_3 {
+    width: 61px;
+    height: 14px;
+    background-position: -5px -83px;
+}
+
+.icon-logo_4 {
+    width: 59px;
+    height: 21px;
+    background-position: -76px -83px;
+}
+
+.icon-logo_5 {
+    width: 77px;
+    height: 13px;
+    background-position: -5px -114px;
+}
+
+.icon-logo_6 {
+    width: 57px;
+    height: 27px;
+    background-position: -142px -5px;
+}
+
+.icon-logo_7 {
+    width: 97px;
+    height: 14px;
+    background-position: -92px -52px;
+}
+
+.icon-logo_8 {
+    width: 83px;
+    height: 21px;
+    background-position: -92px -114px;
+}
+
+.icon-mail {
+    width: 12px;
+    height: 9px;
+    background-position: -199px -42px;
+}
+
+.icon-map {
+    width: 14px;
+    height: 10px;
+    background-position: -199px -61px;
+}
+
+.icon-phone {
+    width: 15px;
+    height: 20px;
+    background-position: -145px -81px;
+}

@@ -1,0 +1,673 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font: 12px/24px Arial, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.wrapper {
+	width:990px;
+	margin: 0 auto;
+}
+
+header {
+	display: block;
+	margin: 10px;
+}
+
+.contact {
+	margin-top: 3px;
+}
+.contact h1 {
+	float: left;
+	font-size: 18px;
+	color: #5e696d;
+	padding-left: 5px;
+
+}
+
+.blue-gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0c3357+100 */
+	background: #1f6787; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1f6787 0%, #0c3357 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1f6787 0%,#0c3357 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1f6787 0%,#0c3357 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+}
+
+.bottom-shadow {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.round-icon {
+	float: left;
+	display: inline-block;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+}
+
+.site-nav {
+	margin-top: 3px;
+	float: right;
+	border: 1px solid #76848a;
+	border-radius: 11px;
+	width: 76px;
+	height: 21px;
+}
+.site-nav ul{
+	list-style: none
+}
+
+.site-nav li{
+	float: left;
+}
+.site-nav a {
+	display: block;
+	margin-left: 5px ;
+	line-height: 20px;
+}
+.site-nav span{
+
+	width: 20px;
+	height: 20px;
+}
+
+.singIn {
+	float: right;
+	width: 495px;
+	height: 27px;
+	border-radius: 5px;
+	margin: 0 14px;
+}
+
+.singIn form{
+    float: left;
+}
+
+.singIn input{
+    width: 115px;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px;
+    font-size: 11px;
+}
+        
+.singinMenu {
+    color: #fff;
+}
+
+.singinMenu a {
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 11px;
+}
+.floatRight {
+    float: right;
+
+}
+.grayLink a{
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #bfbfbf
+}
+
+.poster{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-autorize {
+    width: 14px;
+    height: 18px;
+    background-position: -5px -5px;
+    margin: 3px 3px 0px 7px;
+    float:left;
+}
+
+.icon-checkout {
+    width: 21px;
+    height: 17px;
+    background-position: -29px -5px;
+    margin-top: 7px;
+    margin-right: 7px;
+    float: left;
+}
+
+.icon-icon_1 {
+    width: 12px;
+    height: 14px;
+    background-position: -82px -5px;
+    margin: 3px auto;
+}
+
+.icon-icon_2 {
+    width: 12px;
+    height: 12px;
+    background-position: -104px -5px;
+    margin: 5px 5px;
+}
+
+.icon-logo_1 {
+    width: 72px;
+    height: 13px;
+    background-position: -60px -29px;
+    margin:auto auto;
+}
+
+.icon-logo_2 {
+    width: 77px;
+    height: 21px;
+    background-position: -5px -52px;
+}
+
+.icon-logo_3 {
+    width: 61px;
+    height: 14px;
+    background-position: -5px -83px;
+}
+
+.icon-logo_4 {
+    width: 59px;
+    height: 21px;
+    background-position: -76px -83px;
+}
+
+.icon-logo_5 {
+    width: 77px;
+    height: 13px;
+    background-position: -5px -114px;
+}
+
+.icon-logo_6 {
+    width: 57px;
+    height: 27px;
+    background-position: -142px -5px;
+}
+
+.icon-logo_7 {
+    width: 97px;
+    height: 14px;
+    background-position: -92px -52px;
+}
+
+.icon-logo_8 {
+    width: 83px;
+    height: 21px;
+    background-position: -92px -114px;
+}
+
+.icon-home {
+    width: 12px;
+    height: 11px;
+    background-position: -57px -2px;
+}
+
+.icon-mail {
+    width: 12px;
+    height: 9px;
+    background-position: -199px -37px;
+}
+
+.icon-map {
+    width: 14px;
+    height: 10px;
+    background-position: -199px -57px;
+}
+
+.icon-phone {
+	margin-left: 3px;
+    width: 15px;
+    height: 20px;
+    background-position: -145px -81px;
+}
+
+nav{
+    border-radius: 5px;
+    height: 34px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a2e32+0,505860+5,2a2e32+23,020202+100 */
+    background: #2a2e32; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2a2e32 0%, #505860 5%, #2a2e32 23%, #020202 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2a2e32 0%,#505860 5%,#2a2e32 23%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2a2e32 0%,#505860 5%,#2a2e32 23%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2e32', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
+}
+
+nav a {
+    color: #929b9f;
+    line-height: 34px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:5px 20px;
+    height:25px;
+    border-radius: 15px
+}
+
+nav a:hover {
+    color: #ffffff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0d3458+100 */
+    background: #1f6787; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1f6787 0%, #0d3458 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1f6787 0%,#0d3458 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1f6787 0%,#0d3458 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0d3458',GradientType=0 ); /* IE6-9 */
+
+}
+
+.checkout {
+    margin:0px 20px;
+}
+
+.checkout a {
+    color:red;
+    padding:0px;
+}
+
+.checkout a:hover{
+    background: transparent;    
+}
+.checkout span {
+    font-size: 11px;
+}
+.checkout span:nth-child(even) {
+    margin-left: 10px;
+    color: #929b9f;    
+}
+
+.checkout span:nth-child(odd) {
+    color: #0d5a8f;    
+}
+
+.form-search {
+    border: 1px solid #9c9c9d;
+    border-radius: 15px;
+    height: 135px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.form-search span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #154468;
+    line-height: 20px;
+    display: block;
+
+}
+
+
+.form-search-auto {
+    width: 420px;
+}
+.form-search-tire {
+    width: 190px;
+    margin: 20px 20px;
+}
+.form-search-disk {
+    width: 330px;
+}
+
+.catalog {
+    width: 20%;
+    float: left;
+}
+
+.product {
+    width: 60%;
+    float: left;
+    /*margin-left: 0px 25%;*/
+    /*background-color: yellow;*/
+ }
+
+.brand {
+    width: 20%;
+    float: right;
+}
+
+.labelGroup {
+    padding-top: 4px;
+    padding-left: 4px;
+    border: 1px solid #9c9c9d;
+    border-radius: 14px;
+    height: 24px;
+}
+.labelGroup-150 {
+    width: 150px;
+    margin: 15px 0px 5px;
+}
+.labelGroup p {
+    float: left;
+    padding-left: 10px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #114165;
+}
+
+.list {
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+.list li{
+    list-style-image: url(../img/marker_1.png);
+}
+
+.list li:hover{
+    list-style-image: url(data:image/png;base64,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);
+}
+
+
+.list a {
+    color: #465961;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: #0c3256;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+
+}
+/*.list a:hover > li > ul {
+    list-style-type: circle;
+}*/
+
+.list-checkbox {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.list-checkbox li{
+    list-style: none;
+}
+.list-checkbox li label{
+    color:#465961;
+ }
+.list-checkbox li input[type="checkbox"]{
+    margin-right: 10px; 
+    /*display: block;*/
+    vertical-align: middle;
+   
+}
+
+input[type="submit"] {
+    display: block;
+    width: 82px;
+    height: 24px;
+    line-height: 24px;
+    border:none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50afdc+0,2e7ac4+100 */
+    background: #1f6787; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1f6787 0%, #0c3357 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1f6787 0%,#0c3357 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1f6787 0%,#0c3357 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* IE6-9 */
+}
+
+.tabel-holder {
+    margin: 0px 10px;
+}
+
+table {
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e7e8+0,93a7b0+100 */
+    background: #e5e7e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e5e7e8 0%, #93a7b0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e5e7e8 0%,#93a7b0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e5e7e8 0%,#93a7b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+   
+    border-radius:10px;
+}
+
+td {
+    text-align: center;
+    /*padding: 10px*/
+}
+
+.img-holder{
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    vertical-align: middle;
+    /*border: 1px solid #9c9c9d;*/
+    border-radius: 10px;
+    width: 140px;
+    height: 130px;
+    line-height:130px;
+}
+
+.img-holder img {
+     vertical-align:middle;
+ }
+
+td h1{
+    color: #206988;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+ }
+
+td h2{
+    color: #114165;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 18px;
+ }
+
+td p {
+    color: #202528;
+    font-size: 13px;
+    line-height: 16px;
+}
+td a {
+    text-decoration: none;
+    display: inline;
+    /*background-color: red;*/
+}
+
+.logo-set {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.logo-set img {
+    margin: 0px 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #213a4d;
+    margin-top: 20px;
+    height:70px;
+    text-align: center;
+    color: #7f4740;
+    font-size: 10px;
+}
+
+footer nav {
+    background: transparent;
+    font-size: 12px;
+    color: #929b9f;
+
+}
+footer nav a {
+    padding:0px 10px;
+    background: transparent;
+    font-size: 12px;
+    text-transform: none;
+}
+footer nav a:hover{
+    background: transparent;
+    color: #52abcb;
+}
+
+.form-type-1 {
+    width: 190px;
+    margin: -10px 10px;
+    float: left;
+}
+
+.form-type-1 table {
+    background: transparent;
+}
+
+
+.form-type-1 table td:nth-child(odd) {
+    text-align: left;
+    line-height: 10px;
+
+}
+
+.form-type-1 table td:nth-child(odd) span{
+    display: inline;
+    font-size: 10px;
+    line-height: 0px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-type-1 table td:nth-child(odd) span:nth-child(even){
+    color: #77858b;
+    font-weight: normal;
+}
+
+
+.form-type-1 table td:nth-child(even) {
+    width: 110px;
+    /*background-color: red;*/
+    line-height: 10px;
+    
+ }
+
+.form-type-1 select {
+    width: 100%
+ }
+
+.form-type-1 th {
+    font-size: 12px;
+    font-weight: bold;
+    color: #154468;
+    line-height: 12px;
+    text-align: left;
+}
+
+.form-type-1 th:nth-child(even) {
+    text-align: right;
+}
+
+
+.buttonSearch {
+    position: absolute;
+    bottom: 2px;
+    right: 15px;
+}
+
+.buttonSearch a{
+    color: #154468;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-type-2 {
+    width: 180px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.form-type-2 table {
+    background: transparent;
+}
+
+
+.form-type-2 table td:nth-child(odd) {
+    text-align: left;
+    line-height: 10px;
+}
+
+.form-type-2 table tr:nth-child(3) td:nth-child(1) {
+    vertical-align: top;
+}
+
+
+.form-type-2 table td:nth-child(odd) span{
+    display: inline;
+    font-size: 10px;
+    line-height: 0px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-type-2 table td:nth-child(odd) span:nth-child(even){
+    color: #77858b;
+    font-weight: normal;
+}
+
+
+.form-type-2 table td:nth-child(even) {
+    width: 110px;
+    /*background-color: red;*/
+    line-height: 10px;
+    text-align: left;
+ }
+
+.form-type-2 select {
+    width: 48px
+ }
+
+.form-type-2 th {
+    font-size: 12px;
+    font-weight: bold;
+    color: #154468;
+    line-height: 12px;
+    text-align: left;
+}
+
+.form-type-2 th:nth-child(even) {
+    text-align: right;
+}
+.form-type-2 li {
+    list-style: none;
+    line-height: 15px;
+}
+.form-type-2 li label {
+    line-height: 15px;
+    list-style: none;
+    color:#000000;
+    font-size: 10px;
+    font-weight: bold;
+    color:#000000;
+}
+
+.form-type-2 li input[type="checkbox"]{
+    margin-right: 10px; 
+    /*display: block;*/
+    vertical-align: middle;
+}
+
+.form-type-3 {
+    width: 310px;
+    margin: 0px 10px;
+    float: left;
+}
