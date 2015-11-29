@@ -1,0 +1,159 @@
+/* W > 320 && W < 480*/
+/*@media screen and (max-width: 480px) {}*/
+
+.wrapper {
+	width: 320px;
+	height:100%;
+}
+
+header {
+	height: 500px;
+}
+
+.header-line {
+	top: 200px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.header-line-text-content {
+	width: 230px;
+	height: 55px;
+	margin-left: 50px;
+}
+
+.header-line-text-content h1 {
+	font: 36px/36px "League Gothic";
+}
+
+.header-line-text-content h2 {
+	font: 18px/18px "League Gothic";
+}
+.header-line-text-content p{
+	font-size: 16px;
+	visibility: hidden;
+}
+
+.arrow-nav {
+	visibility: visible;
+}
+
+
+
+.header-line-media {
+	visibility: hidden;
+}
+
+.logo{
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header nav {
+	float: none;
+	margin: 10px auto;
+	width: 200px;
+	padding-top: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+header nav a {
+	padding: 4px 0 0 0 ;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	float: none;
+	margin: 0px;
+	visibility: hidden;
+}
+
+header nav a:first-child {
+	visibility: visible;
+}
+
+header nav a:after {
+	display: block;
+	content:"";
+	background-color: #edbfff;
+	margin: 2px auto;
+	width: 50px;
+	height: 2px;
+}
+
+header nav a:hover:after {
+	content: "";
+	visibility: hidden;
+}
+
+
+.wrapper-top {
+	width: 200px;
+}
+
+/* ---------------------------- */
+
+.content-item{
+	padding: 30px 0;
+	float: none;
+	display: block;
+	width: 100%;
+}
+
+.icon {
+	margin: 0 10px;
+}
+
+/* -------------------------------*/
+
+
+.gray-left-content {
+	margin: 20px 25px;
+}
+
+.gray-right-content {
+	margin: 20px 25px;
+}
+
+.gray-left-content-container {
+	float: none;
+	width: 100%;
+}
+.gray-right-content-container {
+	float: none;
+	width: 100%;
+}
+
+.dark-gray-content-list {
+	float: none;
+	width: 100%;
+	padding: 25px 0;
+}
+
+/* ------------------------------- */
+
+footer nav {
+	position: absolute;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0px;
+}
+
+.copyright {
+	clear: both;
+	float: none;
+	width: 100%;
+	text-align: center;
+
+	line-height: 35px;
+}
+
+footer {
+	height: 70px;
+	background-size:100% 70px;
+}
+footer .wrapper{
+	height: 35px;
+}
