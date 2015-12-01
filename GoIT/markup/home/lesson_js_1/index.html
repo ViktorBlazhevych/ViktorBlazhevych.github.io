@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<div class="ground"></div>
+	<div class="wrapper">
+		<h2>JavaScript</h2>
+		<a href="https://learn.javascript.ru/" style="color:#fff">https://learn.javascript.ru/</a>
+		<div class="lesson"><h3>Lesson 1</h3>
+			<div class="notes">
+				<div class="notes_item f12">
+					<ul>
+					<li>alert(msg)</li>
+					<li>result = prompt(title, default); result:String</li>
+					<li>result = confirm(question);</li>
+					</ul>
+				</div>
+				<div class="notes_item f12">
+					Атрибут <b>async</b>.<p>При обнаружении <b><i>script async src="..."</i></b> браузер не останавливает обработку страницы, а спокойно работает дальше. Когда скрипт будет загружен — он выполнится.</p><br>
+					<p>Атрибут <b>defer</b></p>
+					<p>Поддерживается всеми браузерами, включая самые старые IE. Скрипт также выполняется асинхронно, не заставляет ждать страницу, но есть два отличия от async.</p><br>
+					<p>Первое — браузер гарантирует, что относительный порядок скриптов с defer будет сохранён.</p>
+					<p>То есть, в коде с async первым сработает тот скрипт, который раньше загрузится.</p>
+					<p>А в коде с defer первым сработает всегда 1.js, а скрипт 2.js, даже если загрузился раньше, будет его ждать.</p><br>
+					<p>Подробно: <a href="https://learn.javascript.ru/external-script">https://learn.javascript.ru/external-script</a></p>
+				</div>
+				<div class="notes_item f12">
+				<code>
+					var n = 5;<br>
+					if (~n) { // сработает, т.к. ~n = -(5+1) = -6<br>
+					  alert( "n не -1" ); // выведет!<br>
+					}
+				</code>
+				</div>
+
+				<div class="notes_item f12">
+					<a href="https://learn.javascript.ru/bitwise-operators">Побитовые операции</a></p>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="solution">
+
+				<a class="pure-button pure-button-primary" onclick="lesson_1_a();">pow -Только +/- целые</a>
+				
+				<a class="pure-button pure-button-primary" onclick="lesson_1_b();">Array</a>
+				
+				<p class="small_notes">* html - сбособ вырвниавть содержание DIV по вертикали через :before. Работает только с высотой в PX </p>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div>Lesson 2
+			
+		</div>
+	</div>
+</body>
+</html>
