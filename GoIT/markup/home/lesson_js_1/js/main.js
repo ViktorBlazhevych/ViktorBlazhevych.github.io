@@ -1,13 +1,21 @@
-function lesson_1_a() {
+//function lesson_1_a() {
 	var num, pow, result;
+
+
 	do {
 		num = +prompt("Enter number", 0);
 	}
 	while(isNaN(num) || (num == 0));
+
+
+
 	do {
 		pow = Math.ceil(prompt("Enter pow", 0));
 	}
 	while(isNaN(pow));
+
+
+	
 
 	if(pow == 0){
 		result = 1;
@@ -27,7 +35,16 @@ function lesson_1_a() {
 	function powPlus(n, p, r){
 		return (p > 1) ? powPlus(n, p-1, r*n) : r*n;
 	}
-}
+
+
+
+
+
+
+
+
+
+//}
 
 function lesson_1_b() {
 	var arr = [];
