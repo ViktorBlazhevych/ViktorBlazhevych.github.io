@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StringFly</title>
+    
+    <!-- GS -->
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TimelineMax.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https:maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    <!-- Add list -->
+    <link rel="stylesheet" href="css/listStyle.css"/>
+    <!-- Add styles -->
+     <link rel="stylesheet" href="css/style.css"/>
+
+    <link href='https:fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+
+    <div id="animationPanel" class="animationPanels"> 
+        Hello word<br>
+
+        <button onclick="startAnimation1()">Animation DIV</button><br>
+        <button onclick="startAnimation2()">Animation FONT</button><br>
+        <button onclick="startAnimation3()">Animation IMAGE</button><br>
+        <img id= "imageForAnimation" class="imageForAnimation" src="paris.png">
+
+    </div>
+    
+
+
+
+
+    <div class = "copyright" style = "position: absolute; bottom: 10px; right: 10px;" ><span class="copyright">© <script>document.write(new Date().getFullYear())</script> Viktor Blazhevych for test</span>
+    </div>
+    
+    <!-- SCRIPTS -->
+
+     <script>
+         
+            function startAnimation1 (){
+                var $animationPanelKey = $('#animationPanel');
+
+                var centerY = window.innerHeight/2-0;
+                var tl = new TimelineMax()
+                //tl.to($animationPanelKey, .5, {bottom: 200, opacity:0, ease: Back.easeIn.config(1.7), onComplete:function(){$('#animationPanelKey').css("display", "none")}});
+
+                tl.to($animationPanelKey, .5, {bottom: 200, opacity:0, ease: Back.easeIn.config(1.7)});
+                tl.to($animationPanelKey, .5, {bottom: centerY, opacity:1, ease: Back.easeOut.config(1.7)});
+                tl.to($animationPanelKey, 0.3, {autoAlpha:0, scale:1.5})
+                tl.to($animationPanelKey, 0.3, {autoAlpha:1, scale:1})
+
+
+            }    
+
+            function startAnimation2 (){
+                var $animationPanelKey = $('#animationPanel');
+                var tl = new TimelineMax()
+                tl.to($animationPanelKey, 0.3,  { fontSize: 40, ease: Sine.easeOut})
+                tl.to($animationPanelKey, 0.3,  { fontSize: 13, ease: Sine.easeOut})
+            }
+
+            function startAnimation3 (){
+                var $imageForAnimation = $('#imageForAnimation');
+                var tl = new TimelineMax()
+                tl.to($imageForAnimation, 0.3, {css:{scale:1.5, opacity:0, rotation: 360},  bottom:200})
+                tl.to($imageForAnimation, 0.3, {css:{scale:1.0, opacity:1, rotation: 0}, bottom:100})
+            }
+
+     </script>
+
+</body>
+</html>

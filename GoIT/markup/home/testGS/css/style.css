@@ -1,0 +1,687 @@
+/*
+mainBackgroundColor =   #4f6772
+headerBackgroundColor = #68808b  //light from main
+pColor =                #2c393f  //darked rom main
+
+
+*/
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+  font: 12px/16px 'Open Sans', sans-serif;
+  color: #7d7d7d;
+}
+
+body {
+  padding: 0px  !important;
+  background-color: #e9ebee;
+  /*background-image: url(../img/bg.png);*/
+  background-size: 100% 100%;
+  min-width: 1000px;
+}
+    
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+  /*overflow-x: hidden;*/
+  /*overflow-y: hidden;*/
+}
+
+p
+{
+  margin: 0px;
+}
+
+a{
+  text-decoration: underline;
+  color: #6a6a6a;
+}
+h6 {
+    font-size: 1.2rem !important; 
+}
+
+label
+{
+  color: #4f6772;
+  font-weight: 500;
+  margin-bottom: 1rem !important;
+}
+
+option
+{
+  color: white;
+}
+
+.clearfix{
+  clear: both;
+}
+
+/* MAIN LAYOUT - CONTAINERS AND SPLITER */
+
+.page-container 
+{
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0px;
+  top:70px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.panel-container 
+{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  bottom: 0px;
+  height: 100%;
+  /*border: 1px solid silver;*/
+}
+
+.panel-left 
+{
+  flex: 0 0 auto;
+  padding: 0px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 600px;
+  white-space: nowrap;
+  /*background: #838383;*/
+  position: relative
+}
+
+.splitter {
+  flex: 0 0 auto;
+  background-color: #c1cacf;
+  width: 2px;  
+  cursor: col-resize;  
+}
+
+.panel-right 
+{
+  flex: 1 1 auto;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  min-width: 200px;
+  /*background: #eee;*/
+  position: relative;
+}
+
+
+/* HEADER */
+
+.header
+{
+  height: 70px;
+/*  border-radius: 5px; */
+  background-color: #c1cacf;
+/*  padding: 5px;*/
+/*  margin: 5px; */
+  /*-webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);*/
+  /*-moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);*/
+  /*box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);*/
+}
+.imageForAnimation
+{
+  position: absolute;
+  height: 70px;
+  width-max: 70px;
+}
+.animationPanels
+{
+  position: absolute;
+  bottom: calc(50% + 0px);
+  left: calc(50% - 190px);
+  height: 300px;
+  width: 380px;
+  border-radius: 5px; 
+    background-color: #c1cacf;
+/*  padding: 5px;*/
+  margin: 5px; 
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);
+  box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.38);*/
+}
+
+.flexContainer 
+{
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    /*justify-content: right;*/
+    height: 100%;
+    text-align: center;
+}
+
+.flexContainerToRight
+{
+  width:100%; 
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.toLeft
+{
+  float: left;;
+}
+
+.toRight
+{
+  float: right;
+}
+
+.projectHeader
+{
+	text-align: -webkit-center;
+  float: left;
+	display: inline-block;
+  margin: 0px 10px;
+}
+
+.appName 
+{
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.thumbProject 
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.2);
+	/*background-image: url(../img/thumbProject.png);*/
+	background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.dropZone
+{
+	border: 1px dashed #7d7d7d;
+	border-radius: 10px;
+	/*color: #7d7d7d;*/
+	width: 200px;
+  height: 50px;
+	margin: 0px 20px;
+	position: relative;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+}
+
+.dropZone>p
+{
+  position: relative;
+  width: 80%;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.dropZone [type="file"] 
+{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+
+.bb_button 
+{
+  /*height: 30px;*/
+  cursor: pointer;
+  margin: 5px; 
+  text-align: center;
+  /*line-height: 30px;*/
+  color: #2c393f;
+  /*-webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.2);*/
+}
+
+.bb_button_BG
+{
+  background: linear-gradient(to top, #CCCCCC 0%, #FFFFFF 100%);
+  border-radius: 3px;
+  border: 1px solid #848484;
+}
+
+.bb_button>p, .bb_button_W_30>p
+{
+  color: #516873;
+  margin: 0px 10px;
+  line-height: 20px;
+}
+
+.asButton
+{
+  cursor: pointer;
+}
+
+.spacer_W_30
+{
+  width: 30px;
+}
+
+.logo 
+{
+  width: 105px;
+  height: 40px;
+  background-image: url(../img/logo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px 20px;
+  background-position-y: 3px;
+}
+
+.errorKeyMessage
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  color: #4f6772;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* LEFT SIDEBAR */
+
+.leftSideBarScrollable
+{
+	position: absolute;
+	top: 0px;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*background-color: green;*/
+  padding: 10px
+}
+
+.bottomTools
+{
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+  background-color: #c1cacf;/*rgba(0, 0, 0, 0.3);*/
+}
+
+/* RIGTH PANEL*/
+
+.keyHeader 
+{
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c393f ;
+    line-height: 50px;
+}
+
+.rightSideBarScrollable
+{
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*background-color: green;*/
+  padding: 10px
+}
+
+.bb_textArea
+{
+  width: 100%;
+  line-height: 1.3 !important;
+  font-size: 1.05rem !important;
+}
+
+.separatorItems
+{
+  width: 100%;
+  background: url(../img/big_shadow.png) no-repeat;
+  background-size: 100% 100%;
+  height: 16px;
+  display: block;
+  margin: 5px;
+  opacity: 0.3;
+}
+
+.copyright
+{
+  font-size: 11px;
+  margin: 15px;
+}
+
+.noSelectLanguageTitle
+{
+  color: #2c393f;
+  margin: 15px;
+  text-align: center;
+}
+
+.popover 
+{
+  max-width: 100% !important;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+/* for Important bootstrap */
+
+.bb_input {
+	border-radius: 0.3rem !important;
+	font-size: 1.05rem !important;
+	padding: 0.2rem 0.2rem !important;
+	line-height: 1.05 !important;
+  background-color: #CCCCCC !important;
+  border: 1px solid rgba(0,0,0,.01) !important;
+}
+
+.badge{
+    font-size: 0.8rem  !important;
+    font-weight: 600  !important;
+}
+
+.bb_alert
+{
+  position: absolute;
+  z-index: 9999;
+  width: calc(100% - 10px);
+  height: 90px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.headerTranslatePopover
+{
+  width:500px; 
+  /*display: inline-flex;*/
+}
+
+.headerTranslatePopover>p
+{
+    line-height: 1.5 !important;
+    font-weight: 100;
+    margin-bottom: 0px !important;
+}
+
+.translateLanguageSelector
+{
+  margin: 5px;
+  background-color:#526873 !important;
+  font-weight: 400 !important;
+  width: 100px !important;
+  /*height: 20px !important;*/
+  height: auto !important;
+  font-size: 1rem  !important;
+  color: white !important;
+}
+
+.searchPanel
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+  min-height: 200px;
+  max-height: 70%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.searchItem
+{
+    height: 28px;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    margin: 2px;
+    line-height: 26px;
+    cursor: pointer;
+    padding: 0px 5px;
+    overflow: hidden;
+}
+
+.searchItem:hover
+{
+  background-color: rgba(238, 238, 238, 0.5);
+}
+
+.dot
+{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffc107;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dotLanguage
+{
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  background-color: #cccccc;
+  display: inline-block;
+  margin-right: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 18px;
+}
+
+.dotLanguage_big
+{
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: #cccccc;
+  display: inline-block;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.alertPopUp
+{
+  background-color: #c12626;
+}
+
+.fa
+{
+  font-size: inherit;
+}
+
+.fa-apple:before 
+{
+  font-size: 1.8rem !important;
+  content: "\f179";
+}
+
+.fa-android:before {
+  font-size: 1.8rem !important;
+  content: "\f17b";
+}
+
+.fa-close
+{
+  content: "\f00b";
+}
+
+.fa-arrow-right:before
+{
+  font-size: 1.8rem !important;
+  content: "\f0a9";
+}
+
+.fa-arrow-left:before
+{
+  font-size: 1.8rem !important;
+  content: "\f0a8";
+}
+
+.fa-arrow-collaple:before
+{
+  content: "\f0d7";
+  font-size: 1.8rem !important;
+}
+
+.fa-json:before
+{
+  content: "\f019";
+  font-size: 1.8rem !important;
+}
+
+.fa-plus:before
+{
+  content: "\f055";
+  font-size: 1.8rem !important;
+}
+
+.fa-location:before
+{
+  content: "\f0ac";
+  font-size: 1.8rem !important;
+}
+
+.fa-searchStr:before
+{
+  content: "\f002";
+  font-size: 1.8rem !important;
+}
+
+.fa-saveToServer:before
+{
+  content: "\f0ee";
+  font-size: 1.8rem !important;
+}
+
+.fa_translate:before
+{
+  content: "\f1ab";
+  font-size: 1.8rem !important;
+}
+
+.fa-key:before
+{
+  content: "\f084";
+  font-size: 1.8rem !important;
+}
+
+.fa-enter:before
+{
+  content: "\f011";
+  font-size: 1.8rem !important;
+}
+
+.fa-anonymous:before
+{
+  content: "\f21b";
+  font-size: 1.8rem !important;
+}
+
+.fa-editStrings:before
+{
+  content: "\f14b";
+  font-size: 1.8rem !important;
+}
+
+.fa-info:before
+{
+  content: "\f05a";
+  font-size: 1.8rem !important;
+}
+
+
+/* TABLES */
+
+th
+{
+  vertical-align: middle !important;
+  text-align: right !important;
+  width:150px;
+}
+
+p1
+{
+  font-size:10px;
+}
+
+.fileSection
+{
+  padding: 20px;
+}
+
+.fileArray
+{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.filesBG
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
+  /*background-image: url(../img/thumbProject.png);*/
+  background-size: 90px 90px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.removeButtom
+{
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/removeButtom.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:-5px;
+  right:-5px;
+  display: none;
+}
+
+.filesBlock
+{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display:inline-table;
+}
+
+.filesBlock>p
+{
+  font-size: 10px;
+  text-align: center;
+  width: 100px;
+  height: 15px;
+  overflow: hidden;
+}
+
