@@ -1,0 +1,56 @@
+body
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight:500;
+    color: #475055;
+    word-wrap: break-word;
+}
+
+h1
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 900;
+    color: #9F2671;
+}
+
+h2
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 900;
+    color: #15B4AD;
+}
+
+h3
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #15B4AD;
+}
+
+a
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #15B4AD;
+}
+
+.PBold
+{
+    font-weight: 900;
+}
+
+.box
+{
+    border-style: solid;
+    border-color: #475055;
+    border-width: 1px;
+    padding: 10px;
+    }
