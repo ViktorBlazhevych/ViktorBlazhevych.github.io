@@ -35,7 +35,7 @@ h3 {
 }
 
 .background-image {
-  background-image: url("../../img/_holder.jpg");
+  background-image: url("/img/holder.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
