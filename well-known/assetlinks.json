@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "android_app",
+        "package_name": "lana_grossa.app",
+        "sha256_cert_fingerprints": ["69:83:49:3B:A4:53:48:8D:B6:C3:3E:CD:8E:FB:20:B1:B8:DB:82:85:F0:40:0F:D1:F5:6B:31:68:0D:AE:17:21"]
+    }
+}]

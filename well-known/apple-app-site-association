@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "3279TJ24BK.lana-grossa.app",
+                "paths": ["*"]
+            }
+        ]
+    }
+}
