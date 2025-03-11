@@ -1,56 +1,43 @@
-body
-{
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight:500;
-    color: #475055;
-    word-wrap: break-word;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #475055;
+  word-wrap: break-word;
+  background-color: rgb(71, 35, 38);
+  position: relative;
 }
 
-h1
-{
-    font-family: "Open Sans", sans-serif;
-    text-align: left;
-    font-size: 19px;
-    font-weight: 900;
-    color: #9F2671;
+h1 {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
-h2
-{
-    font-family: "Open Sans", sans-serif;
-    text-align: left;
-    font-size: 19px;
-    font-weight: 900;
-    color: #15B4AD;
+h2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
-h3
-{
-    font-family: "Open Sans", sans-serif;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 600;
-    color: #15B4AD;
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-a
-{
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #15B4AD;
+.background-image {
+  background-image: url("../../img/_holder.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-
-.PBold
-{
-    font-weight: 900;
-}
-
-.box
-{
-    border-style: solid;
-    border-color: #475055;
-    border-width: 1px;
-    padding: 10px;
-    }
