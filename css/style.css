@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 
-h1 {
+.content {
   position: absolute;
   bottom: 100px;
   right: 100px;
@@ -16,6 +16,10 @@ h1 {
   font-size: 19px;
   font-weight: 900;
   color: #ffffff;
+}
+
+h1 {
+  font-size: 19px;
 }
 
 h2 {
