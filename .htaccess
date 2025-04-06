@@ -1,0 +1,4 @@
+<FilesMatch "^[^.]+$">
+    ForceType application/octet-stream
+    Header set Content-Type "application/json"
+</FilesMatch>
