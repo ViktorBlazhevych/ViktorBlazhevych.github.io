@@ -7,7 +7,7 @@
         "paths": [
           "/sign-in",
           "/sign-in/*",
-          "*"
+          "NOT *"
         ]
       }
     ]
